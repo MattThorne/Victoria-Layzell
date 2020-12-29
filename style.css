@@ -1,0 +1,175 @@
+
+
+html{
+    padding:0;
+    background-color: black;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    position: relative;
+    height:50px;
+    z-index: 2;
+
+}
+.nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.nav li{
+    float: right;
+}
+.nav a{
+color: white;
+font-family: 'Lato', sans-serif;
+font-size: large;
+display: block;
+text-align: center;
+padding: 0;
+margin: 10px 5px;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.nav a:hover{
+    color: aquamarine;
+}
+
+
+  
+  .fa-facebook, .fa-instagram {
+    color: white;
+    transition: 0.3s;
+  }
+
+  .fa-facebook:hover, .fa-instagram:hover {
+    color: aquamarine;
+  }
+
+.header{
+    display: flex;
+    height: 100%;
+    margin-top:-50px;
+}
+.header_content{
+    width: 50%;
+    background: black;
+    text-align: center;
+}
+.header_content h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+    font-weight: 100;
+    margin-top:40%;
+    color:aquamarine;
+    text-align: center;
+}
+
+.header_content p{
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: x-large;
+}
+.header_content .contactBtn{
+    display: block;
+    color: white;
+    background-color: black;
+    margin: 100px 40% 0 40%;
+    border: white solid 2px;
+    /*border: dashed aquamarine 1px;*/
+    border-radius: 5px;
+    width: 20%;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    background-position: center;
+    transition:  0.3s;
+    text-decoration: none;
+    z-index: 3;
+}
+.header_content .contactBtn:hover{
+    background-color: aquamarine;
+    border: black solid 2px;
+    color:black;
+    padding: 10px;
+}
+
+
+.header_imageContainer{
+    position: relative;
+    width: 50%;
+    height: auto;
+
+}
+.header_imageContainer .headerPhoto{
+    width: 100%;
+}
+.header_imageContainer .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:linear-gradient(270deg, transparent 0, transparent 50%, black);
+    color: #FFF;  
+   }
+
+
+
+
+@media (max-width: 800px) {
+
+    .header{
+        display: block;
+        position: relative;
+    }
+    .header_content{
+        position: absolute;
+        width:100%;
+        top: 8px;
+        left: 16px;
+        background-color: transparent;
+        z-index: 1;
+        
+    }
+    .header_content h1{
+        margin-top: 10%
+    }
+    .header_content p{
+        background: linear-gradient(90deg, transparent 0, black 50%, transparent 100%);
+        margin: 40% 25% 0 25%;
+        color:white;
+    }
+
+    .header_content .contactBtn{
+        margin-top:20px;
+
+    }
+
+    .header_imageContainer .overlay{
+        background:linear-gradient(180deg, transparent 0, transparent 90%, black);
+    }
+
+    .header_imageContainer{
+        width:100%;
+    }
+
+
+ }
+
+
+
+  
+
+

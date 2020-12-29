@@ -1,0 +1,161 @@
+html{
+    padding:0;
+    background-color: black;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    position: relative;
+    height:50px;
+    z-index: 2;
+
+}
+.nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.nav li{
+    float: right;
+}
+.nav a{
+color: white;
+font-family: 'Lato', sans-serif;
+font-size: large;
+display: block;
+text-align: center;
+padding: 0;
+margin: 10px 5px;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.nav a:hover{
+    color: aquamarine;
+}
+
+
+  
+  .fa-facebook, .fa-instagram {
+    color: white;
+    transition: 0.3s;
+  }
+
+  .fa-facebook:hover, .fa-instagram:hover {
+    color: aquamarine;
+  }
+
+.header{
+    display: flex;
+    height: 100%;
+    margin-top:-50px;
+}
+.header_content{
+    width: 50%;
+    text-align: center;
+    margin-top: 5%;
+}
+.header_content h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color:aquamarine;
+    font-size: 30px;
+    margin: 0 0 0 30px;
+    text-align: center;
+}
+
+.header_content p{
+    color: white;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: x-large;
+}
+
+
+
+.header_imageContainer{
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: auto 0;
+
+}
+.header_imageContainer .headerPhoto{
+    width: 100%;
+    
+}
+.header_imageContainer .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:linear-gradient(90deg, transparent 0, transparent 50%, black);
+    color: #FFF;  
+   }
+
+
+
+.nav .home{
+    float: left;
+    
+}
+.nav .home a{
+    color:aquamarine;
+    font-size: xx-large;
+    font-weight: 100;
+    margin-left: 20px;
+    transition: 0s;
+}
+.nav .home a:hover{
+    font-weight: 300;
+}
+
+.message{
+    margin-top: 30px;
+
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+
+    .header{
+        display: block;
+        position: relative;
+    }
+    .header_content{
+        position: absolute;
+        width:100%;
+        top: 8px;
+        left: 16px;
+        background-color: transparent;
+        z-index: 1;
+        background: linear-gradient(90deg, transparent 0, black 50%, transparent 100%);
+        margin: 30px auto;
+        color:white;
+        margin-top:40%;
+        
+    }
+    
+
+    .header_imageContainer .overlay{
+        background:linear-gradient(180deg, transparent 0, transparent 90%, black);
+    }
+
+    .header_imageContainer{
+        width:100%;
+    }
+
+}

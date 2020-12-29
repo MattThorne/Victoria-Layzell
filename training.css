@@ -1,0 +1,131 @@
+html{
+    padding:0;
+    background-color: black;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    position: relative;
+    height:50px;
+    z-index: 2;
+
+}
+.nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.nav li{
+    float: right;
+}
+.nav a{
+color: white;
+font-family: 'Lato', sans-serif;
+font-size: large;
+display: block;
+text-align: center;
+padding: 0;
+margin: 10px 5px;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.nav a:hover{
+    color: aquamarine;
+}
+
+
+  
+  .fa-facebook, .fa-instagram {
+    color: white;
+    transition: 0.3s;
+  }
+
+  .fa-facebook:hover, .fa-instagram:hover {
+    color: aquamarine;
+  }
+
+
+
+.nav .home{
+    float: left;
+    
+}
+.nav .home a{
+    color:aquamarine;
+    font-size: xx-large;
+    font-weight: 100;
+    margin-left: 20px;
+    transition: 0s;
+}
+.nav .home a:hover{
+    font-weight: 300;
+}
+
+
+h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: aquamarine;
+    margin: 50px 0 50px 0;
+}
+h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: aquamarine;
+}
+
+.trainingList{
+    display:block;
+    margin:0;
+}
+.trainingList li{
+    display: flex;
+    justify-content: center;
+    
+}
+.trainingList .imgContainer, .trainingList .contentContainer {
+    width:30%;
+}
+
+.trainingList p {
+    color: white;
+    width: 90%;
+    margin: auto 5% auto 5%;
+    text-align: center;
+    font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: large;
+}
+
+img{
+    width:100%;
+    border-radius: 10%;
+    
+}
+@media (max-width: 1200px) {
+
+    .trainingList .imgContainer, .trainingList .contentContainer {
+        width:40%;
+    }
+
+
+
+
+
+}
+
+
+@media (max-width: 800px) {
+
+    .trainingList .imgContainer, .trainingList .contentContainer {
+        width:50%;
+    }
+
+ }
