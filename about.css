@@ -70,12 +70,12 @@ transition: 0.3s;
 .header_content p{
     color: white;
     width: 90%;
-    margin: 0 auto 20px auto;
-    text-align: center;
+    margin: 0 auto 30px auto;
+    text-align: left;
     font-family: 'Nothing You Could Do', cursive;
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    font-size: x-large;
+    font-weight: 300;
+    font-size: large;
 }
 
 
