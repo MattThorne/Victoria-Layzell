@@ -1,6 +1,9 @@
 html{
     padding:0;
+    margin:0;
     background-color: black;
+    width:100%;
+    overflow-x: hidden;
 }
 body{
     padding: 0;
@@ -10,6 +13,7 @@ body{
     position: relative;
     height:50px;
     z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
 
 }
 .nav ul{
@@ -157,5 +161,7 @@ transition: 0.3s;
     .header_imageContainer{
         width:100%;
     }
+    .nav a{margin:10px 2px;}
+    .nav .home a{margin: 5px 0 0 5px;}
 
 }
