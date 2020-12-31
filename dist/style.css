@@ -2,7 +2,10 @@
 
 html{
     padding:0;
+    margin:0;
     background-color: black;
+    width:100%;
+    overflow-x: hidden;
 }
 body{
     padding: 0;
@@ -73,6 +76,7 @@ transition: 0.3s;
     color: white;
     width: 50%;
     margin: 0 auto;
+    padding:0;
     text-align: center;
     font-family: 'Nothing You Could Do', cursive;
     font-family: 'Lato', sans-serif;
@@ -83,7 +87,7 @@ transition: 0.3s;
     display: block;
     color: white;
     background-color: black;
-    margin: 100px 40% 0 40%;
+    margin: 100px auto 0 auto;
     border: white solid 2px;
     /*border: dashed aquamarine 1px;*/
     border-radius: 5px;
@@ -137,23 +141,24 @@ transition: 0.3s;
     .header_content{
         position: absolute;
         width:100%;
-        top: 8px;
-        left: 16px;
+        top: 0;
+        left: 0;
         background-color: transparent;
         z-index: 1;
         
     }
     .header_content h1{
-        margin-top: 10%
+        margin-top: 40%
     }
     .header_content p{
         background: linear-gradient(90deg, transparent 0, black 50%, transparent 100%);
-        margin: 40% 25% 0 25%;
+        width: 80%;
+        margin: 0 auto 0 auto;
         color:white;
     }
 
     .header_content .contactBtn{
-        margin-top:20px;
+        margin:20px auto;
 
     }
 

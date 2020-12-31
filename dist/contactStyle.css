@@ -1,18 +1,24 @@
 html{
     padding:0;
+    margin:0;
+    overflow-x: hidden; 
     background-color: black;
+    
 }
 body{
     padding: 0;
     margin: 0;
+    
 }
 .nav{
     position: relative;
     height:50px;
     z-index: 2;
+    
 
 }
 .nav ul{
+    
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -36,15 +42,30 @@ transition: 0.3s;
 .nav a:hover{
     color: aquamarine;
 }
+.nav .home{
+    float: left;
+    
+}
+.nav .home a{
+    color:aquamarine;
+    font-size: xx-large;
+    font-weight: 100;
+    margin-left: 20px;
+    transition: 0s;
+}
+.nav .home a:hover{
+    font-weight: 300;
+}
 
 
-  
-  .fa-facebook, .fa-instagram {
+ .fa-instagram {
     color: white;
     transition: 0.3s;
+    margin: 0;
+    padding: 0;
   }
 
-  .fa-facebook:hover, .fa-instagram:hover {
+ .fa-instagram:hover {
     color: aquamarine;
   }
 
@@ -55,7 +76,6 @@ transition: 0.3s;
 }
 .header_content{
     width: 50%;
-    text-align: center;
     margin-top: 15%;
 }
 .header_content h1{
@@ -67,15 +87,16 @@ transition: 0.3s;
     text-align: left;
 }
 
-.header_content p{
+.message p{
     color: white;
     width: 50%;
     margin: 0 auto;
-    text-align: center;
-    font-family: 'Nothing You Could Do', cursive;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: x-large;
+    margin-left: 10px;
+    display: inline;
+    text-align: left;
 }
 
 
@@ -104,20 +125,7 @@ transition: 0.3s;
 
 
 
-.nav .home{
-    float: left;
-    
-}
-.nav .home a{
-    color:aquamarine;
-    font-size: xx-large;
-    font-weight: 100;
-    margin-left: 20px;
-    transition: 0s;
-}
-.nav .home a:hover{
-    font-weight: 300;
-}
+
 
 .message{
     margin-top: 30px;
@@ -132,24 +140,23 @@ transition: 0.3s;
 }
 .message li{
     margin: 20px 0 0 30%;
+    padding: 0;
     text-align: left;
 }
 .message a{
     color: white;
     text-decoration: none;
 }
-.message p{
-    margin-left: 10px;
-    display: inline;
-    text-align: left;
-}
 
 
 
-.header_content .fa-facebook, .header_content  .fa-instagram,  .header_content  .fa-phone, .header_content  .fa-envelope-square{
+
+ .header_content  .fa-instagram,  .header_content  .fa-envelope-square{
     color: white;
     transition: 0.3s;
     font-size: x-large;
+    padding: 0;
+    margin:0;
   }
   .message li:hover *{
       color: aquamarine;
@@ -182,9 +189,14 @@ transition: 0.3s;
         background:linear-gradient(180deg, transparent 0, transparent 90%, black);
     }
 
-    .header_imageContainer{
-        width:100%;
+    .header_imageContainer{width:100%;}
+    .message li{ margin:20px 10%;}
+    .message p{font-size: large;}
+    .header_content h1{
+        margin: 0;
+        font-size: x-large;
     }
+    .nav .home a{margin: 5px 0 0 5px;}
 
 
  }
