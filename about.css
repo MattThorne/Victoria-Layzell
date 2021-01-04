@@ -74,7 +74,7 @@ transition: 0.3s;
 .header_content p{
     color: white;
     width: 90%;
-    margin: 0 auto 30px auto;
+    margin: 0 5px 30px 5px;
     text-align: left;
     font-family: 'Nothing You Could Do', cursive;
     font-family: 'Lato', sans-serif;
@@ -142,8 +142,8 @@ transition: 0.3s;
     .header_content{
         position: absolute;
         width:100%;
-        top: 8px;
-        left: 16px;
+        top: 0;
+        left: 0;
         background-color: transparent;
         z-index: 1;
         background: linear-gradient(90deg, transparent 0, black 50%, transparent 100%);
