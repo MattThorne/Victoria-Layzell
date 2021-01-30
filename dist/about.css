@@ -32,7 +32,7 @@ font-size: large;
 display: block;
 text-align: center;
 padding: 0;
-margin: 10px 5px;
+margin: 10px 2px;
 text-decoration: none;
 transition: 0.3s;
 }
@@ -116,12 +116,17 @@ transition: 0.3s;
     color:aquamarine;
     font-size: xx-large;
     font-weight: 100;
-    margin-left: 20px;
+    margin-left: 0;
     transition: 0s;
+    width: 100px;
+    margin: 0;
+    z-index: 2;
 }
-.nav .home a:hover{
-    font-weight: 300;
+.nav .home img{
+    width:100%;
+    margin: 10% 0 0 0;
 }
+
 
 .message{
     margin-top: 30px;
@@ -163,5 +168,9 @@ transition: 0.3s;
     }
     .nav a{margin:10px 2px;}
     .nav .home a{margin: 5px 0 0 5px;}
+
+    .nav .home a{
+        width: 60px;
+    }
 
 }
